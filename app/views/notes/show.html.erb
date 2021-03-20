@@ -2,9 +2,19 @@
 
 <p><%= @note.body %></p>
 
-<ul>
-  <li><%= link_to "Edit", edit_note_path(@note) %></li>
-  <li><%= link_to "Destroy", note_path(@note),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-</ul>
+<button><%= link_to "Edit", edit_note_path(@note) %></button>
+<button><%= link_to "Destroy", note_path(@note),
+                method: :delete,
+                  data: { confirm: "Are you sure?" } %></button>
+
+
+<style type="text/css">
+body {
+  color: black;
+  background-color: #ffeccd ;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;}
+
+  h1 {
+    font-size: 50px ; }
+
+</style>

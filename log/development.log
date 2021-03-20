@@ -385,3 +385,803 @@ Processing by NotesController#index as HTML
 Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.1ms | Allocations: 4787)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:22:13 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 4119)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.1ms | Allocations: 4507)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:22:19 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 3067)
+Completed 200 OK in 58ms (Views: 42.9ms | ActiveRecord: 0.4ms | Allocations: 4287)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:22:22 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 1.9ms | Allocations: 994)
+  Rendered notes/new.html.erb within layouts/application (Duration: 18.9ms | Allocations: 1300)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 4259)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 4775)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:22:32 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 3068)
+Completed 200 OK in 54ms (Views: 40.3ms | ActiveRecord: 0.1ms | Allocations: 4289)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:27:01 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 4456)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.1ms | Allocations: 5548)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:27:57 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 1323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 4456)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.2ms | Allocations: 5548)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:29:47 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 1328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 4471)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.1ms | Allocations: 5564)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:32:09 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 1334)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 4467)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.1ms | Allocations: 5564)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:32:26 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 4472)
+Completed 200 OK in 105ms (Views: 103.6ms | ActiveRecord: 0.1ms | Allocations: 5568)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:32:39 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 4462)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.1ms | Allocations: 5555)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:32:49 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (3.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.1ms | Allocations: 4462)
+Completed 200 OK in 97ms (Views: 93.0ms | ActiveRecord: 3.3ms | Allocations: 5554)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:32:55 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 4462)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.1ms | Allocations: 5554)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:33:18 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 4126)
+Completed 200 OK in 52ms (Views: 46.6ms | ActiveRecord: 0.1ms | Allocations: 4514)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:33:42 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 4119)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms | Allocations: 4506)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:34:02 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 4119)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.1ms | Allocations: 4506)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:34:47 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 4465)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.1ms | Allocations: 5564)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:35:09 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 4465)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.1ms | Allocations: 5563)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:35:13 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 7.0ms | Allocations: 991)
+  Rendered notes/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 4266)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 4783)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:35:39 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 4462)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.1ms | Allocations: 5559)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:35:52 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 4462)
+Completed 200 OK in 78ms (Views: 76.6ms | ActiveRecord: 0.1ms | Allocations: 5554)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:36:12 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 21.7ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 4462)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.1ms | Allocations: 5554)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:36:28 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 4462)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.1ms | Allocations: 5554)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:37:36 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 4463)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.1ms | Allocations: 5555)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:37:46 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4480)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.1ms | Allocations: 5579)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:38:57 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 4464)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.2ms | Allocations: 5562)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:39:01 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 4133)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.1ms | Allocations: 4521)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:39:14 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 4464)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.1ms | Allocations: 5561)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:39:43 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 3212)
+Completed 200 OK in 60ms (Views: 40.8ms | ActiveRecord: 0.1ms | Allocations: 4558)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:40:42 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 4461)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.1ms | Allocations: 5553)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:40:57 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 3206)
+Completed 200 OK in 45ms (Views: 33.1ms | ActiveRecord: 0.1ms | Allocations: 4551)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:41:05 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 13.2ms | Allocations: 991)
+  Rendered notes/new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 4256)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 4773)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:41:59 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 2.0ms | Allocations: 1002)
+  Rendered notes/new.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 4465)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms | Allocations: 5563)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:42:04 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 4302)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.1ms | Allocations: 4820)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:42:05 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 3223)
+Completed 200 OK in 64ms (Views: 53.3ms | ActiveRecord: 0.1ms | Allocations: 4569)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:42:08 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 11.2ms | Allocations: 687)
+  Rendered notes/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 3759)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms | Allocations: 4151)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:43:15 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 1.4ms | Allocations: 684)
+  Rendered notes/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 3739)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 4130)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:43:20 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 5.5ms | Allocations: 684)
+  Rendered notes/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 3735)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 4126)
+
+
+Started POST "/notes" for 127.0.0.1 at 2021-03-20 17:43:21 +0100
+Processing by NotesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "note"=>{"title"=>"", "body"=>""}, "commit"=>"Create Note"}
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 38.3ms | Allocations: 3626)
+  Rendered notes/new.html.erb within layouts/application (Duration: 50.8ms | Allocations: 3716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 6603)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms | Allocations: 7761)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:43:35 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 1.4ms | Allocations: 684)
+  Rendered notes/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 3732)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms | Allocations: 4120)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:43:43 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 4123)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.1ms | Allocations: 4513)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:43:45 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 1.4ms | Allocations: 684)
+  Rendered notes/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 3732)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 4123)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:43:48 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 3065)
+Completed 200 OK in 50ms (Views: 38.4ms | ActiveRecord: 0.1ms | Allocations: 4285)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:44:15 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 11.3ms | Allocations: 684)
+  Rendered notes/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 3738)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.0ms | Allocations: 4130)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:44:25 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 2.0ms | Allocations: 1002)
+  Rendered notes/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 1323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 4466)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms | Allocations: 5565)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:44:45 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 1.9ms | Allocations: 995)
+  Rendered notes/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 4452)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 5547)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:44:56 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 1.8ms | Allocations: 995)
+  Rendered notes/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 1308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 4441)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.0ms | Allocations: 5534)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:45:08 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 4295)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.1ms | Allocations: 4811)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:47:21 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 4119)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.1ms | Allocations: 4507)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:47:24 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 13.7ms | Allocations: 687)
+  Rendered notes/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 3735)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.0ms | Allocations: 4126)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:47:52 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 3222)
+Completed 200 OK in 48ms (Views: 37.5ms | ActiveRecord: 0.2ms | Allocations: 4567)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:47:55 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 7.5ms | Allocations: 687)
+  Rendered notes/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 3735)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 4127)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:47:57 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3065)
+Completed 200 OK in 46ms (Views: 27.7ms | ActiveRecord: 0.1ms | Allocations: 4285)
+
+
+Started GET "/notes/1/edit" for 127.0.0.1 at 2021-03-20 17:48:04 +0100
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 25.6ms | Allocations: 743)
+  Rendered notes/edit.html.erb within layouts/application (Duration: 34.3ms | Allocations: 933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 3903)
+Completed 200 OK in 85ms (Views: 62.5ms | ActiveRecord: 0.1ms | Allocations: 5249)
+
+
+Started PATCH "/notes/1" for 127.0.0.1 at 2021-03-20 17:48:09 +0100
+Processing by NotesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "note"=>{"title"=>"Hello Rails", "body"=>"I am on Rails!"}, "commit"=>"Update Note", "id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:28:in `update'
+Redirected to http://localhost:3000/notes/1
+Completed 302 Found in 17ms (ActiveRecord: 0.1ms | Allocations: 1423)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:48:09 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 3078)
+Completed 200 OK in 34ms (Views: 29.2ms | ActiveRecord: 0.1ms | Allocations: 4300)
+
+
+Started GET "/notes/1/edit" for 127.0.0.1 at 2021-03-20 17:48:11 +0100
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 10.0ms | Allocations: 713)
+  Rendered notes/edit.html.erb within layouts/application (Duration: 16.1ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 3761)
+Completed 200 OK in 51ms (Views: 39.9ms | ActiveRecord: 0.1ms | Allocations: 4978)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:48:14 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 3076)
+Completed 200 OK in 35ms (Views: 27.4ms | ActiveRecord: 0.1ms | Allocations: 4297)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:48:16 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 4124)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.1ms | Allocations: 4514)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:49:29 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 4473)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.1ms | Allocations: 5570)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:49:44 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 7.7ms | Allocations: 994)
+  Rendered notes/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 4267)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 4784)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:49:57 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 3217)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 0.1ms | Allocations: 4563)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:50:59 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 3390)
+Completed 200 OK in 66ms (Views: 52.7ms | ActiveRecord: 0.1ms | Allocations: 5313)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 17:51:06 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 1325)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 4287)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.1ms | Allocations: 4802)
+
+
+Started GET "/notes/1" for 127.0.0.1 at 2021-03-20 17:51:12 +0100
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 3083)
+Completed 200 OK in 82ms (Views: 60.0ms | ActiveRecord: 0.1ms | Allocations: 4305)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:51:37 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 4.7ms | Allocations: 994)
+  Rendered notes/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 1311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 4275)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 4792)
+
+
+Started POST "/notes" for 127.0.0.1 at 2021-03-20 17:51:40 +0100
+Processing by NotesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "note"=>{"title"=>"", "body"=>""}, "commit"=>"Create Note"}
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 30.8ms | Allocations: 3476)
+  Rendered notes/new.html.erb within layouts/application (Duration: 37.1ms | Allocations: 3566)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 6464)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 7490)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 17:51:42 +0100
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 11.3ms | Allocations: 684)
+  Rendered notes/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 3732)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms | Allocations: 4121)
+
+
