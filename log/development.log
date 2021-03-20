@@ -1890,3 +1890,28 @@ Processing by NotesController#new as HTML
 Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms | Allocations: 5533)
 
 
+Started GET "/notes/new" for 127.0.0.1 at 2021-03-20 18:57:09 +0100
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NotesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 41.0ms | Allocations: 2758)
+  Rendered notes/new.html.erb within layouts/application (Duration: 54.9ms | Allocations: 3188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 137.9ms | Allocations: 8197)
+Completed 200 OK in 263ms (Views: 160.6ms | ActiveRecord: 12.8ms | Allocations: 14178)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 18:57:13 +0100
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:4
+  Rendered notes/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 4380)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.2ms | Allocations: 4932)
+
+
