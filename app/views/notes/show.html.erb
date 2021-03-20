@@ -2,10 +2,10 @@
 
 <p><%= @note.body %></p>
 
-<button><%= link_to "Edit", edit_note_path(@note) %></button>
-<button><%= link_to "Destroy", note_path(@note),
+<button class="boton_personalizado"><%= link_to "Edit", edit_note_path(@note), class: "link" %></button>
+<button class="boton_personalizado"><%= link_to "Destroy", note_path(@note),
                 method: :delete,
-                  data: { confirm: "Are you sure?" } %></button>
+                  data: { confirm: "Are you sure?" },class: "link"%></button>
 
 
 <style type="text/css">
@@ -16,5 +16,19 @@ body {
 
   h1 {
     font-size: 50px ; }
+
+    .boton_personalizado{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 6px;
+        border: 2px solid #acaba9;
+      }
+      .link{
+          color:black;
+      }
 
 </style>
