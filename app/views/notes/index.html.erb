@@ -10,85 +10,32 @@
 <body>
 <h1>Notes</h1>
 
-<button class="boton_personalizado"><%= link_to "New Note", new_note_path ,class: "link"%></button>
 
-<ul>
-  <% @notes.each do |note| %>
-    <li>
-    <%= link_to note.title, note , class: "link" %>
-    </li>
-  <% end %>
-</ul>
 
 <div class="container">
   <div class="container">
     <div class="card-columns">
-      <div class="card">
-        <a href="#">
+  <% @notes.each do |note| %>
+    
+    <div class="card">
+        <a>
         <img class="card-img-top" src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+          <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium...
+          <%= link_to note.body, note, class:"link"%>
           </p>
-          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+          <p class="card-text"><small class="text-muted"><i class="fas fa-heart"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
       </div>
         </a>
       </div>
-      <div class="card">
-        <a href="#">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1472076638602-b1f8b1ac0b4a?ixlib=rb-0.3.5&s=63c9de7246b535be56c8eaff9b87dd89&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, doloremque!</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto maxime nemo omnis praesentium similique.</p>
-          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
-        </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1535086181678-5a5c4d23aa7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34c86263bec2c8f74ceb74e9f4c5a5fc&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur.</h5>
-          <p class="card-text">Amet commodi deleniti enim laboriosam odio placeat praesentium quis ratione rerum suscipit.</p>
-          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
-        </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1535074153497-b08c5aa9c236?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2aaf944a59f16fe1fe72f5057b3a7dd&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur.</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
-        </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1535124406821-d2848dfbb25c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98c434d75b44c9c23fc9df2a9a77d59f&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur culpa cumque deserunt dignissimos error explicabo fugiat harum ipsam magni minus mollitia nemo perferendis qui repellendus rerum saepe vel voluptate voluptatem voluptatum!
-            Aperiam, labore, molestiae!..</p>
-          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
-        </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1508015926936-4eddcc6d4866?ixlib=rb-0.3.5&s=10b3a8717ab609be8d7786cab50c4e0b&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi debitis eaque explicabo fuga maiores necessitatibus, neque omnis optio vel!</p>
-          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
-        </div>
-        </a>
-      </div>
-    </div>
+  <% end %>
+  </div>
   </div>
 </div>
+<a href="http://localhost:3000/notes/new" class="float">
+<i class="fa fa-plus my-float"></i>
+</a>
 </body>
 
 <style type="text/css">
@@ -97,29 +44,10 @@ body {
   background-color: #ffeccd ;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;}
 
-  #h1 {
-    #font-size: 50px ; }
+  h1 {
+    font-size: 50px ; }
 
-    .boton_personalizado{
-        text-decoration: none;
-        padding: 10px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #000000;
-        background-color: #ffffff;
-        border-radius: 6px;
-        border: 2px solid #acaba9;
-      }
-      .link{
-        color:black;
-    }
 
-    #body {
-  #background: #232321;}
-h1 {
-  color: #fff;
-  padding: 10px 0;
-}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -137,5 +65,20 @@ h1 {
 .card .text-muted i {
   margin: 0 10px;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
 
+.my-float{
+	margin-top:22px;
+}
 </style>
