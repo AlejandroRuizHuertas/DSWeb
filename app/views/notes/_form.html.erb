@@ -1,32 +1,33 @@
 <%= form_with model: note do |form| %>
-    <div>
+<div>
+    
       <%= form.label :title %><br>
+      
+      <div class="mensaje">
       <%= form.text_field :title %>
+      </div>
+      
       <% note.errors.full_messages_for(:title).each do |message| %>
         <div><%= message %></div>
       <% end %>
-    </div>
+          </div>
   
     <div>
+    <div class="titulo">
       <%= form.label :body %><br>
+      </div>
+      <div class ="area">
       <%= form.text_area :body %><br>
+      </div>
       <% note.errors.full_messages_for(:body).each do |message| %>
         <div><%= message %></div>
       <% end %>
     </div>
+    <div class = "imagen">
     <input type="file" name="image" accept=".jpg, .jpeg, .png"></input> 
-    <div>
+    </div>
+    <div class = "confirmacion">
       <%= form.submit %>
     </div>
   <% end %>
   
-  <style type="text/css">
-body {
-  color: black;
-  background-color: #ffeccd ;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;}
-
-  h1 {
-    font-size: 50px ; }
-
-</style>
