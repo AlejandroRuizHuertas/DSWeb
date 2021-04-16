@@ -14,8 +14,7 @@
  *= require_self
  */
 
- 
- body {
+body {
     color: black;
     background-color: #ffeccd;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -24,7 +23,6 @@
 h1 {
     font-size: 50px;
 }
-
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -48,21 +46,41 @@ h1 {
     margin: 0 10px;
 }
 
-.float {
+.float_new_note {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #0C9;
-    color: #FFF;
+    background-color: #42a8a1;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
 
-.my-float {
-    margin-top: 22px;
+.float_back {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    top: 40px;
+    background-color: #507dbc;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.inside_new_note {
+    font-size: 28px;
+    margin-top: 1rem;
+}
+
+.inside_back {
+    font-size: 28px;
+    margin-top: 1rem;
 }
 
 a:hover {
@@ -82,7 +100,6 @@ a:hover {
 }
 
 .titulo {
-    
     margin-top: 1rem;
 }
 
@@ -95,10 +112,22 @@ textarea {
     width: 50%;
 }
 
-.imagen{
+.imagen {
     padding: 0.5rem;
 }
 
-.confirmacion{
+.confirmacion {
     padding-top: 1rem;
+}
+
+.name_user {
+    padding-right: 7rem;
+    text-align: right;
+}
+
+.user_circle {
+    text-align: right;
+    padding-right: 4rem;
+    margin-top: -4rem;
+    font-size: 2.25rem;
 }
