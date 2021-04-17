@@ -1,26 +1,27 @@
 <head>
-    <meta charset="UTF-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= stylesheet_link_tag 'application' %>
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'application' %>
 
 </head>
 
 <body>
-    <div class="container_total">
-        <div class="text-center">
-        <h1><%= @note.title %></h1>
-             <div class="container">
-             <p><%= @note.body %></p>
-            </div>
-            <button class="btn btn-default btn_show"> <span class="glyphicon glyphicon-pencil"></span> <%= link_to "Edit", edit_note_path(@note), class:"a_btns" %></button>
-            <button class="btn btn-default btn_show"> <span class="glyphicon glyphicon-trash"></span> <%= link_to "Destroy", note_path(@note),
+  <div class="container_total">
+    <div class="text-center">
+      <h1><%= @note.title %></h1>
+      <div class="container">
+        <p><%= @note.body %></p>
+      </div>
+      <button class="btn btn-default btn_show"> <span class="glyphicon glyphicon-pencil"></span> <%= link_to "Edit", edit_note_path(@note), class:"a_btns" %></button>
+      <button class="btn btn-default btn_show"> <span class="glyphicon glyphicon-trash"></span> <%= link_to "Destroy", note_path(@note),
                 method: :delete,
                   data: { confirm: "Are you sure?" },class: "a_btns"%></button>
-        </div>
+    </div>
 
-        <a href="http://localhost:3000/" class="btn-primary float_back">
-        <i class="fas fa-arrow-left inside_back"></i>
-    </a>
-</body>
+    <%= link_to '/notes', method: :get, class: "btn-primary float_back" do %>
+      <i class="fas fa-arrow-left inside_back"></i>
+    <% end %>
+
+  </body>

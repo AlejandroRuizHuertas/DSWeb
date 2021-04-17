@@ -1,0 +1,29 @@
+<%= form_with model: user do |u| %>
+  <div class="form-group mb-3">
+
+    <div class="form-group mb-3">
+      <%= u.text_field :first_name, class: "input form-control rounded-pill border-0 shadow-sm px-4", required: "true", autofocus: "true", placeholder: "First name" %>
+      <%# <input placeholder="Name" required="" autofocus="" class="input form-control rounded-pill border-0 shadow-sm px-4"> %>
+    </div>
+    <div class="form-group mb-3">
+      <%= u.text_field :last_name, class: "input form-control rounded-pill border-0 shadow-sm px-4", required: "true", autofocus: "true", placeholder: "Last name" %>
+      <%# <input placeholder="Last name" required="" class="input form-control rounded-pill border-0 shadow-sm px-4"> %>
+    </div>
+    <br>
+
+    <p class="letters mb-4"> Enter your username </p>
+    <div class="form-group mb-3">
+      <%= u.text_field :username, :class =>  "input form-control rounded-pill border-0 shadow-sm px-4", placeholder: "Username", required: "true", autofocus: "true"  %>
+    </div>
+    <br>
+    <p class="letters mb-4"> Enter your password and repeat </p>
+    <div class="form-group mb-3">
+      <%= u.password_field :password_digest, :class =>  "input form-control rounded-pill border-0 shadow-sm px-4", placeholder: "Password", required: "true" %>
+    </div>
+    <div class="form-group mb-3">
+      <%= u.password_field :password_digest, :class =>  "input form-control rounded-pill border-0 shadow-sm px-4", placeholder: "Repeat password", required: "true" %>
+    </div>
+    <%=  u.submit "Create account", :class =>'btns btn btn-primary btn-block' %>
+
+  </div>
+<% end %>
