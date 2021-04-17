@@ -9,10 +9,19 @@ h1 {
     font-size: 50px;
 }
 
+.a_btns {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border: none;
+}
+
+.card-title {
+    font-size: 2rem;
 }
 
 .card:hover {
@@ -51,7 +60,7 @@ h1 {
     bottom: 40px;
     left: 40px;
     top: 40px;
-    background-color: #507dbc;
+    background-color: #42a8a1;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -123,4 +132,14 @@ textarea {
     padding-right: 4rem;
     margin-top: -7rem;
     font-size: 2.25rem;
+}
+
+.btn_show {
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    border-radius: 10px;
+    font-size: 1.45rem;
+    width: 11rem;
+    height: 4rem;
+    color: #fff;
 }
