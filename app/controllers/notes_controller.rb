@@ -1,5 +1,5 @@
 class NotesController < ApplicationController
-  
+    
   def index
     @notes = Note.all
   end
@@ -31,6 +31,7 @@ class NotesController < ApplicationController
       render :edit
     end
   end
+
   def destroy
     @note = Note.find(params[:id])
     @note.destroy

@@ -1,19 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 body {
     color: black;
     background-color: #ffeccd;
@@ -73,19 +58,27 @@ h1 {
     box-shadow: 2px 2px 3px #999;
 }
 
+.float_sign_out {
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    border-radius: 20px;
+    font-size: 1.45rem;
+    width: 11rem;
+    color: #fff;
+}
+
 .inside_new_note {
     font-size: 28px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .inside_back {
     font-size: 28px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 a:hover {
     color: #666666;
-    text-decoration: underline;
 }
 
 .container_total {
@@ -121,13 +114,13 @@ textarea {
 }
 
 .name_user {
-    padding-right: 7rem;
+    padding-right: 8rem;
     text-align: right;
 }
 
 .user_circle {
     text-align: right;
     padding-right: 4rem;
-    margin-top: -4rem;
+    margin-top: -7rem;
     font-size: 2.25rem;
 }
