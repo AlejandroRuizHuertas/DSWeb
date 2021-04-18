@@ -17,9 +17,34 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+
+    redirect_to "/admin/management"
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+
+    if @user.update(user_edit)
+      redirect_to "/admin/management"
+    else
+      render :edit
+    end
+  end
+
   private
 
   def user_params
     params.permit(:username, :first_name, :last_name, :password_digest)
+  end
+
+  def user_edit
+    params.require(:user).permit(:username, :first_name, :last_name)
   end
 end

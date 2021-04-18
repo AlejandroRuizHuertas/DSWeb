@@ -13,7 +13,7 @@
             <div class="name_user">
                 <h3>Hello, <%= current_user.username %>!</h3>
                 <h4>Current time <%= Time.now.strftime("%d/%m/%Y %H:%M")%></h4>
-                <%= button_to "Log Out", 'logout', method: :get, class: "btn btn-primary float_sign_out", style: "
+                <%= button_to "Log Out", '/logout', method: :get, class: "btn btn-primary float_sign_out", style: "
                 font-size: 1.45rem"%>
             </div>
             <div class="user_circle">
@@ -44,6 +44,9 @@
                             <td><%= user.last_name %></td>
                             <td><%= user.username %></td>
                             <td><%= user.isAdmin %></td>
+                            <td><button class="btn btn-primary float_sign_out" style="margin-right:5px"><%= link_to "Edit", edit_user_path(user.id), class: "a_btns"%></button>
+                                <button class="btn btn-primary float_sign_out"><%= link_to "Delete", user_path(user.id), method: :delete,
+                                data: { confirm: "Are you sure?" },class: "a_btns"%></button></td>
                         </tr>
                         <% end %>
                     </tbody>
@@ -52,8 +55,3 @@
         </div>
     </div>
 </body>
-
-<script type="text/javascript">
-    $('td:contains("true")').html("<i class='fa fa-check' aria-hidden='true'></i>").addClass("text-center");
-    $('td:contains("false")').html("<i class='fa fa-times' aria-hidden='true'></i>").addClass("text-center");
-</script>

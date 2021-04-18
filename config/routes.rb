@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root "sessions#login"
 
-  resources :users, only: [:new, :create, :destroy]
+  resources :users
   resources :notes
 
   post "/" => "sessions#create"

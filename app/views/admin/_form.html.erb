@@ -1,0 +1,34 @@
+<%= form_with model: user do |form| %>
+<div>
+    
+      <%= form.label :title %><br>
+      
+      <div class="mensaje">
+      <%= form.text_field :title %>
+      </div>
+      
+      <% note.errors.full_messages_for(:title).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+          </div>
+  
+    <div>
+    <div class="titulo">
+      <%= form.label :body %><br>
+      </div>
+      <div class ="area">
+      <%= form.text_area :body %><br>
+      </div>
+      <% note.errors.full_messages_for(:body).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+    <div class = "imagen">
+    <input type="file" name="image" accept=".jpg, .jpeg, .png"></input> 
+    </div>
+    <div class = "confirmacion">
+      <%= form.submit %>
+    </div>
+
+  <% end %>
+  
