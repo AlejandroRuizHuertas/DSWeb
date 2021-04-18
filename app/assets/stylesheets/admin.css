@@ -1,0 +1,12 @@
+.container {
+    margin-top:150px;
+  }
+  p {
+    margin-bottom:50px;
+  }
+  .fa-check {
+    color:green;
+  }
+  .fa-times {
+    color:red;
+  }

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :note
+  has_many :notes
   validate :password_digest
   validates :first_name, presence: true
   validates :last_name, presence: true

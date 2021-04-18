@@ -1,50 +1,51 @@
 <head>
-  <meta charset="UTF-8">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag 'application' %>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag 'application' %>
 
 </head>
 
 <body>
-  <div class="container_total">
-    <div class="container_user">
-      <div class="name_user">
-        <h3>Hello, Fulanitow!</h3>
-        <h4>Last connection on 04/15/2021</h4>
-        <%= button_to "Log Out", 'logout', method: :get, class: "btn btn-primary float_sign_out", style: "
+    <div class="container_total">
+        <% if current_user.isAdmin %><%= button_to "Management", '/admin/management', method: :get, class: "btn btn-primary float_sign_out"%><%end%>
+        <div class="container_user">
+            <div class="name_user">
+                <h3>Hello, <%= current_user.username %>!</h3>
+                <h4>Current time <%= Time.now.strftime("%d/%m/%Y %H:%M")%></h4>
+                <%= button_to "Log Out", 'logout', method: :get, class: "btn btn-primary float_sign_out", style: "
                 font-size: 1.45rem"%>
-      </div>
-      <div class="user_circle">
-        <i class="far fa-user-circle" style="font-size: 2.75rem"></i>
-      </div>
-    </div>
+            </div>
+            <div class="user_circle">
+                <i class="far fa-user-circle" style="font-size: 2.75rem"></i>
+            </div>
+        </div>
 
-    <div class="text-center">
-      <h1>Notes</h1>
-    </div>
-    <div class="container">
-      <div class="card-columns">
-        <% @notes.each do |note| %>
+        <div class="text-center">
+            <h1>Notes</h1>
+        </div>
+        <div class="container">
+            <div class="card-columns">
+                <% @user = current_user %>
+                <% @user.notes.each do |note| %>
 
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src="<%= asset_path('default_note.jpg') %>" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
-                <p class="card-text">
-                  <%= link_to note.body, note, class:"link"%>
-                </p>
-                <p class="card-text"><small class="text-muted"><i class="fas fa-heart"></i>1000<i class="far fa-user"></i><%=session[:idUsuario]%><i class="fas fa-calendar-alt"></i><%=note.updated_at%></small></p>
-              </div>
-            </a>
-          </div>
-        <% end %>
-      </div>
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="<%= asset_path('default_note.jpg') %>" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
+                            <p class="card-text">
+                                <%= link_to note.body, note, class:"link"%>
+                            </p>
+                            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i><%= current_user.username %><i class="fas fa-calendar-alt"></i><%=note.updated_at%></small></p>
+                        </div>
+                    </a>
+                </div>
+                <% end %>
+            </div>
+        </div>
     </div>
-  </div>
-  <a href="http://localhost:3000/notes/new" class="btn-primary float_new_note">
-    <i class="fa fa-plus inside_new_note"></i>
-  </a>
+    <%= button_to "+", '/notes/new', method: :get, class: "btn-primary float_new_note"%>
+    </a>
 </body>
