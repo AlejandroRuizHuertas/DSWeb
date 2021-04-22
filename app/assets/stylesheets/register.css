@@ -4,7 +4,7 @@
 }
 
 .bg-image {
-    background-image: url("https://cdn.pixabay.com/photo/2015/09/05/23/02/notepad-926046_960_720.jpg");
+    background-image: url(/images/image_login.jpg);
     background-size: cover;
     background-position: center center;
 }
