@@ -42,13 +42,15 @@ h1 {
 
 .float_new_note {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     bottom: 40px;
     right: 40px;
     background-color: #42a8a1;
+    border-color: #42a8a1;
     color: #fff;
     border-radius: 50px;
+    font-size: 4rem;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
@@ -56,11 +58,12 @@ h1 {
 .float_back {
     position: absolute;
     width: 80px;
-    height: 60px;
+    height: 57px;
     bottom: 40px;
     left: 40px;
     top: 40px;
     background-color: #42a8a1;
+    border-color: #42a8a1;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -78,7 +81,7 @@ h1 {
 
 .inside_new_note {
     font-size: 28px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .inside_back {
@@ -142,4 +145,20 @@ textarea {
     width: 11rem;
     height: 4rem;
     color: #fff;
+}
+
+.btn_management {
+    position: absolute;
+    width: 130px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    top: 40px;
+    font-size: 1.45rem;
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
 }

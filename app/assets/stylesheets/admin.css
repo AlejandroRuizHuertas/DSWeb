@@ -1,12 +1,82 @@
+body {
+    color: black;
+    background-color: #ffeccd;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
 .container {
-    margin-top:150px;
-  }
-  p {
-    margin-bottom:50px;
-  }
-  .fa-check {
-    color:green;
-  }
-  .fa-times {
-    color:red;
-  }
+    margin-top: 150px;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-times {
+    color: red;
+}
+
+.btn_management {
+    position: absolute;
+    width: 130px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    top: 40px;
+    font-size: 1.45rem;
+    background-color: #42a8a1;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.btn_edit_delete {
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.float_sign_out {
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    border-radius: 20px;
+    font-size: 1.45rem;
+    width: 11rem;
+    color: #fff;
+}
+
+.float_back {
+    position: absolute;
+    width: 80px;
+    height: 57px;
+    bottom: 40px;
+    left: 40px;
+    top: 40px;
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}

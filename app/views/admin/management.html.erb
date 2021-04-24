@@ -44,8 +44,8 @@
                             <td><%= user.last_name %></td>
                             <td><%= user.username %></td>
                             <td><%= user.isAdmin %></td>
-                            <td><button class="btn btn-primary float_sign_out" style="margin-right:5px"><%= link_to "Edit", edit_user_path(user.id), class: "a_btns"%></button>
-                                <button class="btn btn-primary float_sign_out"><%= link_to "Delete", user_path(user.id), method: :delete,
+                            <td><button class="btn btn-primary btn_edit_delete" style="margin-right:5px"><%= link_to "Edit", edit_user_path(user.id), class: "a_btns"%></button>
+                                <button class="btn btn-primary btn_edit_delete"><%= link_to "Delete", user_path(user.id), method: :delete,
                                 data: { confirm: "Are you sure?" },class: "a_btns"%></button></td>
                         </tr>
                         <% end %>
@@ -54,4 +54,7 @@
             </div>
         </div>
     </div>
+    <a href="http://localhost:3000/notes" class="btn-primary float_back">
+        <i class="fas fa-arrow-left inside_back"></i>
+    </a>
 </body>

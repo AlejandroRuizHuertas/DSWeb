@@ -9,7 +9,7 @@
 
 <body>
     <div class="container_total">
-        <% if current_user.isAdmin %><%= button_to "Management", '/admin/management', method: :get, class: "btn btn-primary float_sign_out"%><%end%>
+        <% if current_user.isAdmin %><%= button_to "Management", '/admin/management', method: :get, class: "btn btn-primary btn_management"%><%end%>
         <div class="container_user">
             <div class="name_user">
                 <h3>Hello, <%= current_user.username %>!</h3>
@@ -46,6 +46,6 @@
             </div>
         </div>
     </div>
-    <%= button_to "+", '/notes/new', method: :get, class: "btn-primary float_new_note"%>
+    <%= button_to "+", '/notes/new', method: :get, class: "btn btn-primary float_new_note"%>
     </a>
 </body>
