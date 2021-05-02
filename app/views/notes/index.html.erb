@@ -28,6 +28,7 @@
         <div class="container">
             <div class="card-columns">
                 <% @user = current_user %>
+                <% if !current_user.isAdmin %>
                 <% @user.notes.each do |note| %>
 
                 <div class="card">
@@ -38,10 +39,27 @@
                             <p class="card-text">
                                 <%= link_to note.body, note, class:"link"%>
                             </p>
-                            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i><%= current_user.username %><i class="fas fa-calendar-alt"></i><%=note.updated_at%></small></p>
+                            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i><%= note.user.username %><i class="fas fa-calendar-alt"></i><%=note.updated_at%></small></p>
                         </div>
                     </a>
                 </div>
+                <% end %>
+                <% else %>
+                <% @notes.each do |note| %>
+
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="<%= asset_path('default_note.jpg') %>" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
+                            <p class="card-text">
+                                <%= link_to note.body, note, class:"link"%>
+                            </p>
+                            <p class="card-text"><small class="text-muted"><i class="far fa-user"></i><%= note.user.username %><i class="fas fa-calendar-alt"></i><%=note.updated_at%></small></p>
+                        </div>
+                    </a>
+                </div>
+                <% end %>
                 <% end %>
             </div>
         </div>
