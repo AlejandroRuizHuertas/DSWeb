@@ -26,6 +26,10 @@
     <div class = "imagen">
     <%= form.file_field :image, accept:'image/*' %>
     </div>
+    <div class="colecciones">
+
+    <%= form.select :collection_id, options_for_select(@collections.map{|collection| ["#{collection.name}", collection.id] }) %>
+</div>
     <div class = "confirmacion">
       <%= form.submit %>
     </div>
