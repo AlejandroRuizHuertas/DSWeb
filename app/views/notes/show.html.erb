@@ -1,34 +1,27 @@
-<h1><%= @note.title %></h1>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'application' %>
 
-<p><%= @note.body %></p>
+</head>
 
-<button class="boton_personalizado"><%= link_to "Edit", edit_note_path(@note), class: "link" %></button>
-<button class="boton_personalizado"><%= link_to "Destroy", note_path(@note),
+<body>
+  <div class="container_total">
+    <div class="text-center">
+      <h1><%= @note.title %></h1>
+      <div class="container">
+        <p><%= @note.body %></p>
+      </div>
+      <button class="btn btn-default btn_show"> <span class="glyphicon glyphicon-pencil"></span> <%= link_to "Edit", edit_note_path(@note), class:"a_btns" %></button>
+      <button class="btn btn-default btn_show"> <span class="glyphicon glyphicon-trash"></span> <%= link_to "Destroy", note_path(@note),
                 method: :delete,
-                  data: { confirm: "Are you sure?" },class: "link"%></button>
+                  data: { confirm: "Are you sure?" },class: "a_btns"%></button>
+    </div>
 
+    <%= link_to '/notes', method: :get, class: "btn-primary float_back" do %>
+      <i class="fas fa-arrow-left inside_back"></i>
+    <% end %>
 
-<style type="text/css">
-body {
-  color: black;
-  background-color: #ffeccd ;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;}
-
-  h1 {
-    font-size: 50px ; }
-
-    .boton_personalizado{
-        text-decoration: none;
-        padding: 10px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #000000;
-        background-color: #ffffff;
-        border-radius: 6px;
-        border: 2px solid #acaba9;
-      }
-      .link{
-          color:black;
-      }
-
-</style>
+  </body>

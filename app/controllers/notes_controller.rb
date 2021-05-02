@@ -1,4 +1,5 @@
 class NotesController < ApplicationController
+    
   def index
     @notes = Note.all
   end
@@ -12,14 +13,16 @@ class NotesController < ApplicationController
   end
 
   def create
-    @note = Note.new(note_params)
-
+    @user = current_user
+    @note = @user.notes.new(note_params)
+    
     if @note.save
       redirect_to @note
     else
       render :new
     end
   end
+
   def edit
     @note = Note.find(params[:id])
   end
@@ -33,11 +36,12 @@ class NotesController < ApplicationController
       render :edit
     end
   end
+
   def destroy
     @note = Note.find(params[:id])
     @note.destroy
 
-    redirect_to root_path
+    redirect_to notes_path
   end
 
   private
