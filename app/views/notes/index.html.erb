@@ -1,0 +1,40 @@
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Bootstrap card tile layout</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag 'application' %>
+
+</head>
+
+<body>
+    <div class="container_total">
+        <div class="text-center">
+            <h1>Notes</h1>
+        </div>
+        <div class="container">
+            <div class="card-columns">
+                <% @notes.each do |note| %>
+
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/07/31/11/52/table-1558811_1280.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
+                            <p class="card-text">
+                                <%= link_to note.body, note, class:"link"%>
+                            </p>
+                            <p class="card-text"><small class="text-muted"><i class="fas fa-heart"></i>1000<i class="far fa-user"></i>admin<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+                        </div>
+                    </a>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <a href="http://localhost:3000/notes/new" class="float">
+        <i class="fa fa-plus my-float"></i>
+    </a>
+</body>
+
