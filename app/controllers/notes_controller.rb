@@ -44,8 +44,14 @@ class NotesController < ApplicationController
     redirect_to notes_path
   end
 
+  def delete_image_attachment
+    @image = ActiveStorage::Blob.find_signed(params[:id])
+    @image.attachments.first.purge
+    redirect_to notes_path
+  end
+
   private
     def note_params
-      params.require(:note).permit(:title, :body)
+      params.require(:note).permit(:title, :body, :image)
     end
 end
