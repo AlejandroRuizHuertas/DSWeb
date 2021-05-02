@@ -142,7 +142,7 @@ textarea {
     border-color: #42a8a1;
     border-radius: 10px;
     font-size: 1.45rem;
-    width: 11rem;
+    width: 15rem;
     height: 4rem;
     color: #fff;
 }
@@ -161,4 +161,9 @@ textarea {
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
+}
+
+.img-note {
+    width: 30%;
+    height: 30%;
 }

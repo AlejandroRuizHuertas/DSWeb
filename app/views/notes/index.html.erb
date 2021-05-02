@@ -32,8 +32,10 @@
                 <% @user.notes.each do |note| %>
 
                 <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" src="<%= asset_path('default_note.jpg') %>" alt="Card image cap">
+                    <a href="/notes/<%= note.id %>">
+                        <img class="card-img-top" <%if note.image.attached? %> src="<%= (url_for(note.image)) %>"
+                        <% else %>src="<%= asset_path('default_note.jpg') %>"
+                        <% end %>alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
                             <p class="card-text">
@@ -48,8 +50,10 @@
                 <% @notes.each do |note| %>
 
                 <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" src="<%= asset_path('default_note.jpg') %>" alt="Card image cap">
+                    <a href="/notes/<%= note.id %>">
+                        <img class="card-img-top" <%if note.image.attached? %> src="<%= (url_for(note.image)) %>"
+                        <% else %>src="<%= asset_path('default_note.jpg') %>"
+                        <% end %>alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"> <%= link_to note.title, note, class:"link"%></h5>
                             <p class="card-text">

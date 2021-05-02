@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root "sessions#login"
   
-  resources :notes
+  resources :notes do
+    member do
+      delete :delete_image_attachment
+    end
+  end
 
   post "/" => "sessions#create"
   get "logout" => "sessions#destroy"

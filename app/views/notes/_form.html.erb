@@ -24,7 +24,7 @@
       <% end %>
     </div>
     <div class = "imagen">
-    <input type="file" name="image" accept=".jpg, .jpeg, .png"></input> 
+    <%= form.file_field :image, accept:'image/*' %>
     </div>
     <div class = "confirmacion">
       <%= form.submit %>
