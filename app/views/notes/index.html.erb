@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'menu' %>
 
 </head>
 
@@ -26,6 +27,16 @@
             <h1>Notes</h1>
         </div>
         <div class="container">
+        <aside class="colecciones sidebar">
+        <nav class="nav">
+          <ul>
+            <li class="active"><a href="#">Welcome</a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">Touch</a></li>
+          </ul>
+        </nav>
+      </aside>
             <div class="card-columns">
                 <% @user = current_user %>
                 <% if !current_user.isAdmin %>
