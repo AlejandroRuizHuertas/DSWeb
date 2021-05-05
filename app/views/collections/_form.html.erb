@@ -1,0 +1,15 @@
+<%= form_with model: collection do |form| %>
+<div>
+    
+      <%= form.label :name %><br>
+      
+      <div class="mensaje">
+      <%= form.text_field :name %>
+      </div>
+      
+    <div class = "confirmacion">
+      <%= form.submit %>
+    </div>
+
+  <% end %>
+  

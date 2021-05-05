@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag 'admin' %>
+
+</head>
+
+<body>
+    <div class="container_total">
+        <div class="container_user">
+            <div class="name_user">
+                <h3>Hello, <%= current_user.username %>!</h3>
+                <h4>Current time <%= Time.now.strftime("%d/%m/%Y %H:%M")%></h4>
+                <%= button_to "Log Out", '/logout', method: :get, class: "btn btn-primary float_sign_out", style: "
+                font-size: 1.45rem"%>
+            </div>
+            <div class="user_circle">
+                <i class="far fa-user-circle" style="font-size: 2.75rem"></i>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h1>Manage Collections</h1>
+        </div>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @collections.each do |collection| %>
+                        <tr>
+                            <th scope="row"><%= collection.id %></th>
+                            <td><%= collection.name %></td>
+                            <td><%= collection.user.username %></td>
+                            <th><button class="btn btn-primary btn_edit_delete" style="margin-right:5px"><%= link_to "Edit", edit_collection_path(collection.id), class: "a_btns"%></button>
+                                <button class="btn btn-primary btn_edit_delete"><%= link_to "Delete", collection_path(collection.id), method: :delete,
+                                data: { confirm: "Are you sure?" },class: "a_btns"%></button></th>
+                        </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="http://localhost:3000/notes" class="btn-primary float_back">
+        <i class="fas fa-arrow-left inside_back"></i>
+    </a>
+</body>
