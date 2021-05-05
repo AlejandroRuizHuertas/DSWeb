@@ -1,7 +1,14 @@
 class NotesController < ApplicationController
     
   def index
-    @notes = Note.all
+    @user = current_user
+    if @user.isAdmin
+      @notes = Note.all
+      @collections = Collection.all
+    else
+      @notes = @user.notes.all
+      @collections = @user.collections.all
+    end
   end
 
   def show
@@ -16,7 +23,7 @@ class NotesController < ApplicationController
     if @user.isAdmin
       @collections = Collection.all
     else
-@collections = @user.collections.all
+      @collections = @user.collections.all
     end
   end
 
@@ -25,7 +32,7 @@ class NotesController < ApplicationController
     if @user.isAdmin
       @collections = Collection.all
     else
-@collections = @user.collections.all
+      @collections = @user.collections.all
     end
 
     @note = @user.notes.new(note_params)

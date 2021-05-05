@@ -1,52 +1,68 @@
 class CollectionsController < ApplicationController
     
     def index
-      @notes = Collection.all
+      @collections = Collection.all
     end
   
     def show
-      @note = Collection.find(params[:id])
+      @user = current_user
+      if @user.isAdmin
+        @collections = Collection.all
+      else
+        @collections = @user.collections.all
+      end
+      @collection = Collection.find(params[:id])
+      @notes = @collection.notes.all
     end
   
     def new
-      @note = Collection.new
+      @collection = Collection.new
     end
   
     def create
       @user = current_user
-      @note = @user.notes.new(note_params)
+      @collection = @user.collections.new(collection_params)
       
-      if @note.save
-        redirect_to @note
+      if @collection.save
+        redirect_to @collection
       else
         render :new
       end
     end
   
     def edit
-      @note = Note.find(params[:id])
+      @collection = Collection.find(params[:id])
     end
   
     def update
-      @note = Note.find(params[:id])
+      @collection = Collection.find(params[:id])
   
-      if @note.update(note_params)
-        redirect_to @note
+      if @collection.update(collection_params)
+        redirect_to "/collections/manage"
       else
         render :edit
       end
     end
   
     def destroy
-      @note = Note.find(params[:id])
-      @note.destroy
+      @collection = Collection.find(params[:id])
+      @collection.destroy
   
-      redirect_to notes_path
+      redirect_to "/collections/manage"
+    end
+
+    def manage
+      @user = current_user
+      if @user.isAdmin
+        @collections = Collection.all
+      else
+        @collections = @user.collections.all
+      end
     end
   
     private
-      def note_params
-        params.require(:note).permit(:title, :body)
+      def collection_params
+        params.require(:collection).permit(:name)
       end
   end
   
