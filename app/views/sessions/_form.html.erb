@@ -1,0 +1,12 @@
+<%= form_with model: user do |u| %>
+  <div class="form-group mb-3">
+    <%= u.text_field :username, class: "input form-control rounded-pill border-0 shadow-sm px-4", placeholder:"Username" %>
+
+  </div>
+  <div class="form-group mb-3">
+    <%= u.password_field :password_digest, class: "input form-control rounded-pill border-0 shadow-sm px-4", placeholder:"Password" %>
+
+  </div>
+  <br>
+  <%= u.submit "Log In", class: "btns btn btn-primary btn-block"%>
+<% end%>

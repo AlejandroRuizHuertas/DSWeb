@@ -10,12 +10,12 @@
 <body>
     <div class="container_total">
         <div class="text-center">
-            <h1>Edit Note</h1>
+            <h1>Edit Collection</h1>
             <div class="container">
-                <%= render "form", note: @note %>
+                <%= render "form", collection: @collection %>
             </div>
         </div>
-        <a class= "btn-primary float_back" href="/notes/<%= @note.id %>">
+        <a class= "btn-primary float_back" href="/collections/manage">
         <i class="fas fa-arrow-left inside_back"></i>
         </a>
 </body>

@@ -1,21 +1,5 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
- 
- body {
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+body {
     color: black;
     background-color: #ffeccd;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -25,11 +9,19 @@ h1 {
     font-size: 50px;
 }
 
+.a_btns {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border: none;
+}
+
+.card-title {
+    font-size: 2rem;
 }
 
 .card:hover {
@@ -48,26 +40,57 @@ h1 {
     margin: 0 10px;
 }
 
-.float {
+.float_new_note {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     bottom: 40px;
     right: 40px;
-    background-color: #0C9;
-    color: #FFF;
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float_back {
+    position: absolute;
+    width: 80px;
+    height: 57px;
+    bottom: 40px;
+    left: 40px;
+    top: 40px;
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
 
-.my-float {
-    margin-top: 22px;
+.float_sign_out {
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    border-radius: 20px;
+    font-size: 1.45rem;
+    width: 11rem;
+    color: #fff;
+}
+
+.inside_new_note {
+    font-size: 28px;
+    margin-top: 1rem;
+}
+
+.inside_back {
+    font-size: 28px;
+    margin-top: 1.5rem;
 }
 
 a:hover {
     color: #666666;
-    text-decoration: underline;
 }
 
 .container_total {
@@ -82,7 +105,6 @@ a:hover {
 }
 
 .titulo {
-    
     margin-top: 1rem;
 }
 
@@ -95,10 +117,53 @@ textarea {
     width: 50%;
 }
 
-.imagen{
+.imagen {
     padding: 0.5rem;
 }
 
-.confirmacion{
+.confirmacion {
     padding-top: 1rem;
+}
+
+.name_user {
+    padding-right: 8rem;
+    text-align: right;
+}
+
+.user_circle {
+    text-align: right;
+    padding-right: 4rem;
+    margin-top: -7rem;
+    font-size: 2.25rem;
+}
+
+.btn_show {
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    border-radius: 10px;
+    font-size: 1.45rem;
+    width: 15rem;
+    height: 4rem;
+    color: #fff;
+}
+
+.btn_management {
+    position: absolute;
+    width: 130px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    top: 40px;
+    font-size: 1.45rem;
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.img-note {
+    width: 30%;
+    height: 30%;
 }

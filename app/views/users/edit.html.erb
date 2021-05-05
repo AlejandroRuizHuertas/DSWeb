@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag 'application' %>
+
+</head>
+
+<body>
+    <div class="container_total">
+        <div class="text-center">
+            <h1>Edit User</h1>
+            <div class="container">
+                <%= form_with model: @user do |form| %>
+                <div>
+                    <%= form.label :first_name %><br>
+                    <div class="mensaje">
+                        <%= form.text_field :first_name %>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <%= form.label :last_name %><br>
+                    <div class="mensaje">
+                        <%= form.text_field :last_name %>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <%= form.label :username %><br>
+                    <div class="mensaje">
+                        <%= form.text_field :username %>
+                    </div>
+                </div>
+                <br>
+                <div class="confirmacion">
+                    <%= form.submit %>
+                </div>
+
+                <% end %>
+
+            </div>
+        </div>
+
+        <a href="/admin/management" class="btn-primary float_back">
+            <i class="fas fa-arrow-left inside_back"></i>
+        </a>
+</body>

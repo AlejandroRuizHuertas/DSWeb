@@ -1,0 +1,39 @@
+.login,
+.image {
+    min-height: 100vh;
+}
+
+.bg-image {
+    background-image: url(/images/image_login.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.background {
+    background-color: #ffeccd !important;
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.letters {
+    color: #6c757d !important;
+    font-size: 2rem;
+}
+
+.input {
+    font-size: 1.75rem;
+    border-radius: 10px;
+}
+
+.btns {
+    border-radius: 20px;
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.35rem;
+    background-color: #42a8a1;
+    border-color: #42a8a1;
+}
