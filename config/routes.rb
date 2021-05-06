@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   post "/" => "sessions#create"
+  get "error" => "sessions#error"
   get "logout" => "sessions#destroy"
   get "users/register" => "users#new"
   post "users/register" => "users#create"

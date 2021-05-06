@@ -2,12 +2,16 @@ class NotesController < ApplicationController
     
   def index
     @user = current_user
-    if @user.isAdmin
-      @notes = Note.all
+     if !@user.nil?
+      if @user.isAdmin
+        @notes = Note.all
       @collections = Collection.all
     else
       @notes = @user.notes
       @collections = @user.collections
+      end
+    else
+      redirect_to "/error"
     end
   end
 
@@ -20,19 +24,27 @@ class NotesController < ApplicationController
     @note = Note.new
     
     @user = current_user
-    if @user.isAdmin
-      @collections = Collection.all
+    if !@user.nil?
+      if @user.isAdmin
+        @collections = Collection.all
+      else
+        @collections = @user.collections
+      end
     else
-      @collections = @user.collections
+      redirect_to "/error"
     end
   end
 
   def create
     @user = current_user
-    if @user.isAdmin
-      @collections = Collection.all
+    if !@user.nil?
+      if @user.isAdmin
+        @collections = Collection.all
+      else
+        @collections = @user.collections
+      end
     else
-      @collections = @user.collections
+      redirect_to "/error"
     end
     @note = @user.notes.new(note_params)
 
@@ -47,10 +59,14 @@ class NotesController < ApplicationController
   def edit
     @note = Note.find(params[:id])
     @user = current_user
-    if @user.isAdmin
-      @collections = Collection.all
+    if !@user.nil?
+      if @user.isAdmin
+        @collections = Collection.all
+      else
+        @collections = @user.collections
+      end
     else
-      @collections = @user.collections
+      redirect_to "/error"
     end
   end
 

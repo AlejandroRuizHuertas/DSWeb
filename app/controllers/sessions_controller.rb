@@ -13,4 +13,6 @@ class SessionsController < ApplicationController
     session.delete(:idUsuario)
     redirect_to root_path, notice: "Logged out!"
   end
+  def error 
+  end
 end
