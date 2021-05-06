@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'admin' %>
+    <%= stylesheet_link_tag 'application' %>
 
 </head>
 
@@ -53,4 +54,5 @@
     <a href="http://localhost:3000/notes" class="btn-primary float_back">
         <i class="fas fa-arrow-left inside_back"></i>
     </a>
+    <%= button_to "+", '/collections/new', method: :get, class: "btn btn-primary float_new_note"%>
 </body>

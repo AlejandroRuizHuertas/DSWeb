@@ -6,8 +6,8 @@ class NotesController < ApplicationController
       @notes = Note.all
       @collections = Collection.all
     else
-      @notes = @user.notes.all
-      @collections = @user.collections.all
+      @notes = @user.notes
+      @collections = @user.collections
     end
   end
 
@@ -23,7 +23,7 @@ class NotesController < ApplicationController
     if @user.isAdmin
       @collections = Collection.all
     else
-      @collections = @user.collections.all
+      @collections = @user.collections
     end
   end
 
@@ -32,9 +32,8 @@ class NotesController < ApplicationController
     if @user.isAdmin
       @collections = Collection.all
     else
-      @collections = @user.collections.all
+      @collections = @user.collections
     end
-
     @note = @user.notes.new(note_params)
 
     if @note.save
@@ -47,7 +46,12 @@ class NotesController < ApplicationController
 
   def edit
     @note = Note.find(params[:id])
-    @collections = Collection.all
+    @user = current_user
+    if @user.isAdmin
+      @collections = Collection.all
+    else
+      @collections = @user.collections
+    end
   end
 
   def update
